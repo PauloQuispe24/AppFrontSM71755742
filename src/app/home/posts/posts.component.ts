@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { PostViewmodelService } from '../../viewmodels/post-viewmodel.service';
 import { PostResponse } from '../../models/post-response.model';
+import { MaterialModule } from '../../angular-material/material/material.module';
 
 @Component({
   selector: 'app-posts',
-  imports: [],
+  imports: [MaterialModule],
   templateUrl: './posts.component.html',
   styleUrl: './posts.component.css'
 })
 export class PostsComponent {
   posts : PostResponse[] = []
+  displayedColumns: string[] = ['id', 'title', 'body'];
 
   constructor(private postViewModel: PostViewmodelService){
 

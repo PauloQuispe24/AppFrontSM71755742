@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { MaterialModule } from '../angular-material/material/material.module';
 import { AuthService } from '../viewmodels/login-viewmodel.service';
 import { ActivatedRoute, Router} from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [MaterialModule],
+  imports: [MaterialModule, RouterOutlet],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
