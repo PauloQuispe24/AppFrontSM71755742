@@ -5,6 +5,7 @@ import { MaterialModule } from '../../angular-material/material/material.module'
 
 @Component({
   selector: 'app-users',
+  standalone: true,
   imports: [MaterialModule],
   templateUrl: './users.component.html',
   styleUrl: './users.component.css'
@@ -28,6 +29,5 @@ export class UsersComponent {
         console.log(err)
       }
     })
-
   }
 }
