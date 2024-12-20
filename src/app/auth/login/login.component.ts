@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MaterialModule } from '../../angular-material/material/material.module';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../../viewmodels/login-viewmodel.service';
 import { ActivatedRoute, Router} from '@angular/router';
 
 @Component({

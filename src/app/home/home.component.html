@@ -1,8 +1,8 @@
 <mat-toolbar color="primary">
   <span>JSONPlaceholder</span>
   <span class="spacer"></span>
-  <button mat-button routerLink="posts">Lista de Posts</button>
-  <button mat-button routerLink="users">Lista de Usuarios</button>
+  <button mat-button (click)="goPosts()">Lista de Posts</button>
+  <button mat-button (click)="goUsers()">Lista de Usuarios</button>
   <button mat-button (click)="logout()">Cerrar Sesión</button>
 </mat-toolbar>
 

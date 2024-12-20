@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MaterialModule } from '../angular-material/material/material.module';
-import { AuthService } from '../auth/auth.service';
+import { AuthService } from '../viewmodels/login-viewmodel.service';
 import { ActivatedRoute, Router} from '@angular/router';
 
 @Component({
@@ -20,5 +20,13 @@ export class HomeComponent {
   logout() {
     this.authService.logout();
     this.router.navigate(['/login']);
+  }
+
+  goPosts() {
+    this.router.navigate(['posts'], { relativeTo: this.route });
+  }
+
+  goUsers() {
+    this.router.navigate(['users'], { relativeTo: this.route });
   }
 }
